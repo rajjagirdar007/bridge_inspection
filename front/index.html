@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vue.js App</title>
+</head>
+<body>
+  <div id="app"></div>
+  <!-- Vue app will be mounted here -->
+  <script src="/app.js"></script>
+  <!-- Include the Vue app bundle -->
+</body>
+<script>
+import Vue from 'vue';
+import App from './App.vue';
+
+Vue.config.productionTip = false;
+
+new Vue({
+  render: h => h(App),
+}).$mount('#app');
+
+
+</script>
+</html>
+
